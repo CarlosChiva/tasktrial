@@ -7,7 +7,7 @@ from taskersClass.read import read as rd
 # invoke write -n="shdglkj dshgf"
 # invoke write --name dkflhgdsl
 # invoke write -n sfjhgldkfh
-@task
+@task(help={"name":"write a string to a file"})
 def write(c,name="write a string to a file"):
     wr(name)
 @task
